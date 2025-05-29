@@ -1,0 +1,28 @@
+#card{
+    transition: all 0.5s ease;
+}
+#card:hover{
+    background-position: 80%;
+    transform: rotate3d(1,1,0,15deg);
+    box-shadow:0 0 30px rgb(0, 204, 255);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.line {
+    width: 80%;
+    height: 4px;
+    /* background: linear-gradient(to right, #fff, #888); */
+    background: linear-gradient(to right, #0ff, #00f);
+    margin: 8px 0;
+    animation: shrinkLines 2s infinite alternate ease-in-out;
+    animation-delay: var(--delay);
+}
+@keyframes shrinkLines {
+    0% { width: 80%; opacity: 1; }
+    100% { width: 20%; opacity: 0.5; }
+}
