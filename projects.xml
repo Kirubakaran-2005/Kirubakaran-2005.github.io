@@ -1,0 +1,30 @@
+<xml>
+    <projects>
+        <project>
+            <title>Chat System</title>
+            <content>Chat Hut is the basic version of the chat System
+            is built using the Java programming language with core concepts 
+            like Multithreading, Server-Client architecture, JDBC</content>
+            <gitlink>https://github.com/Kirubakaran-2005/ChatSystem</gitlink>
+        </project>
+        <project>
+            <title>Weather App</title>
+            <content>Weather App integrates a Weather API, allowing users to check real-time weather 
+            reports by simply entering a city name. It features a user-friendly interface for seamless and intuitive access to weather data.</content>
+            <gitlink>https://github.com/Kirubakaran-2005/Weather-App</gitlink>
+        </project>
+        <project>
+            <title>Tic-Tac-Toe Game</title>
+            <content>I developed a Tic Tac Toe game using React, featuring an interactive and responsive UI for a smooth gaming experience. 
+            It includes dynamic state management and real-time updates for seamless gameplay.</content>
+            <gitlink>https://github.com/Kirubakaran-2005/Tic-Tac-Toe</gitlink>
+        </project>
+        <project>
+            <title>ToDo-List</title>
+            <content>I built a To-Do List app using React, allowing users to 
+            efficiently add, edit, and delete tasks with a clean and intuitive interface. 
+            It features real-time state updates for seamless task management.</content>
+            <gitlink>https://github.com/Kirubakaran-2005/ToDo-List</gitlink>
+        </project>
+    </projects>
+</xml>
