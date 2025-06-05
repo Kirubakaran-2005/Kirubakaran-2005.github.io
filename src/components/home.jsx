@@ -101,14 +101,24 @@ function home()
         </section>
 
         <section id="Projects" className="bg-[#0f172a] flex flex-col justify-center items-center text-center py-8 " href="#Projects">
-                <h1 className="text-gray-100 text-4xl sm:text-5xl sm:leading-[3.5rem] font-bold ">My creations</h1>
+                <h1 className="bg-gradient-to-r via-violet-600 text-gray-100 text-4xl sm:text-5xl sm:leading-[3.5rem] font-bold ">My Creations</h1>
         <div className="flex flex-wrap justify-center">
             {projects.map((project,index) => (
-                <div key={index} id="card" className="shadow-violet-400 bg-slate-600 h-[300px] w-[300px] rounded-[10px] mt-8 mx-5">
-                <h1 className="text-white text-[1.6em] font-sans font-medium my-2">{project.title}</h1>
-                <hr></hr>
-                <h1 className="font-sans text-xl px-5 py-5 text-[15px] font-bold text-zinc-200">{project.content}</h1>
-                <button className="font-bold text-[1em] rounded-xl bg-zinc-300 px-3 py-2 cursor-pointer hover:text-[1.1em]"><a href={project.gitlink} target="__blank" rel="noopener noreferrer">Github</a></button>
+                // <div key={index} id="card" className="shadow-violet-400 bg-slate-600 h-[300px] w-[300px] rounded-[10px] mt-8 mx-5">
+                // <h1 className="text-white text-[1.6em] font-sans font-medium my-2">{project.title}</h1>
+                // <hr></hr>
+                // <h1 className="font-sans text-xl px-5 py-5 text-[15px] font-bold text-zinc-200">{project.content}</h1>
+                // <button className="font-bold text-[1em] rounded-xl bg-zinc-300 px-3 py-2 cursor-pointer hover:text-[1.1em]">
+                //     <a href={project.gitlink} target="__blank" rel="noopener noreferrer">Github</a></button>
+                // </div>
+
+                <div key={index} id="card" className="shadow-violet-400 bg-slate-600 h-[300px] w-[300px] rounded-xl mt-8 mx-5">
+                <h1 className="text-white text-2xl font-bold mb-3 my-2">{project.title}</h1>
+                <div className='h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent my-2'></div>
+                <h1 className="text-xl px-5 py-5 text-[15px] font-bold text-gray-300">{project.content}</h1>
+                <button className="inline-block font-bold text-[1em] rounded-lg bg-violet-600 hover:bg-violet-700 text-white
+                        px-4 py-2 transition-all duration-200 group-hover:px-5">
+                    <a href={project.gitlink} target="__blank" rel="noopener noreferrer">Github</a></button>
                 </div>
             ))}
         </div>
@@ -118,7 +128,7 @@ function home()
         <section id="Contact" className="h-screen flex flex-col justify-center items-center text-center px-6 bg-[#0f172a] text-white">
         <h1 className="text-white font-bold text-[3em] sm:text-[5em]">Let's create together.</h1>
         <h2 className="text-slate-200 font-bold text-[1.2em] sm:text-[1.9em]">kiruba29kirubakaran@gmail.com</h2>
-        <button className="text-white font-sans font-bold bg-amber-600 rounded-[10px] py-2 px-3 sm:text-[1.4rem] text-[1.2em] mt-10 cursor-pointer hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 "><a  href="https://mail.google.com/mail/?view=cm&fs=1&to=kiruba29kirubakaran@gmail.com" target="__blank" rel="noopener">Contact me</a></button>
+        <button className="text-white font-sans font-bold bg-amber-600 rounded-[10px] py-2 px-3 sm:text-[1.4rem] text-[1.2em] mt-10 cursor-pointer hover:bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 "><a  href="mailto:kiruba29kirubakaran@gmail.com" target="__blank" rel="noopener">Contact me</a></button>
         </section>
         <footer>
             <h1 className="flex justify-center text-center bg-[#0f172a] text-slate-300 font-bold text-[1.2em]">&copy; 2025 Kirubakaran V</h1>
